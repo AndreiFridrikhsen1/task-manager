@@ -1,0 +1,36 @@
+#chart {
+    -fx-background-color: #B2FC74;
+}
+
+AnchorPane {
+    -fx-background-color: #627BFF;
+}
+Label {
+    -fx-text-fill: #B2FC74;
+    -fx-font-size: 30px;
+    -fx-font-family: "Bookman Old Style";
+}
+Button {
+    -fx-background-color:#B2FC74 ;
+    -fx-border-radius: 10px;
+    -fx-padding: 15px;
+
+}
+Button:hover, ToggleButton:hover{
+    -fx-background-color: orange;
+}
+ToggleButton{
+    -fx-background-color:#B2FC74 ;
+    -fx-padding: 15px;
+}
+#display {
+    -fx-font-size: 20px;
+    -fx-border-color: white;
+    -fx-border-radius: 10px;
+}
+Text{
+    -fx-font-size: 11px;
+    -fx-font-style: italic;
+    -fx-text-fill: red;
+
+}

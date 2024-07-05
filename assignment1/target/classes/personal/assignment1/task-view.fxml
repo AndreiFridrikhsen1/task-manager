@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pannable="true" prefHeight="649.0" prefWidth="907.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="personal.assignment1.TasksController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0">
+         <children>
+            <ToggleButton fx:id="toggle" contentDisplay="CENTER" layoutX="421.0" layoutY="546.0" mnemonicParsing="false" onAction="#onToggle" text="Add task" textAlignment="CENTER" />
+            <ScrollPane fx:id="scrollPane" layoutX="136.0" layoutY="97.0" prefHeight="391.0" prefWidth="641.0">
+               <content>
+                  <BarChart id="chart" fx:id="barChart" alternativeColumnFillVisible="true" animated="false" barGap="8.0" categoryGap="15.0" minHeight="-Infinity" prefHeight="400.0" prefWidth="630.0">
+                    <xAxis>
+                        <NumberAxis side="TOP" />
+                    </xAxis>
+                    <yAxis>
+      
+                                                                  <CategoryAxis side="LEFT" />
+                    </yAxis>
+                     <padding>
+                        <Insets bottom="200.0" />
+                     </padding>
+                  </BarChart>
+               </content>
+            </ScrollPane>
+            <Label id="taskManagerLaber" fx:id="taskManagerLaber" alignment="CENTER" layoutX="223.0" layoutY="26.0" prefHeight="57.0" prefWidth="407.0" text="Task manager" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
